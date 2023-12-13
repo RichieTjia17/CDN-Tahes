@@ -10,6 +10,8 @@ $fileName  =  $_FILES['sendimage']['name'];
 $tempPath  =  $_FILES['sendimage']['tmp_name'];
 $fileSize  =  $_FILES['sendimage']['size'];
 
+$txt = "user id date"; $myfile = file_put_contents('logs.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+
 function get_client_ip()
 {
     $ipaddress = '';
